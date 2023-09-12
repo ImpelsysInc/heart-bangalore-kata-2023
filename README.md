@@ -1,2 +1,2 @@
-# heart-bangalore-kata-2023
+# Architecture Katas sept 2023
 Software Architecture
