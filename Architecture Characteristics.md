@@ -3,29 +3,42 @@
 To ensure a successful system implementation, it's vital to prioritize key architecture characteristics. These elements guarantee reliability, availability, and responsiveness, delivering a seamless user experience.
 
 
-![Alt text](architecture-characteristic.png)
-*Figure Architecture Characteristics*
+![Alt text](Diagrams/architecture-characteristic.png)
+*Figure: Architecture Characteristics*
 
+## Top 3 Characteristics
+### Scalability
+ Scalability allows the system to accommodate a growing user base and increased data volume, ensuring that Road Warrior can scale its services as it gains more users.
 
-## Reliability
+### Availability
+"99.99% uptime" is a High availability, with a maximum of 5 minutes per month of unplanned downtime, is essential to ensure travelers can access their reservations and updates reliably.
+### Responsiveness
+ Responsiveness in the user interface is vital for providing a positive user experience, allowing travelers to quickly access and manage their travel information.
 
-Reliability is another key characteristic, ensuring that the system consistently performs as expected without errors or failures.
+ ## Other Characteristics
+### Interoperability
+ Interoperability is crucial to seamlessly integrate with external travel systems and agencies, ensuring smooth data exchange and collaboration.
 
-- The system must reliably receive, process, and deliver travel updates within 5 minutes of their generation. Any failure in this regard could lead to users missing important information.
-- Reliability is also critical when interfacing with external travel systems and agencies, as errors could disrupt the flow of data and lead to user dissatisfaction.
+### Elasticity
+ Elasticity enables the system to dynamically scale resources up or down in response to varying workloads, ensuring cost-efficiency and optimal performance.
 
+### Performance
+ Performance optimization is critical to meet the specified response times and deliver real-time travel updates quickly and efficiently.
 
-## Availability
+### Reliability
+ Reliability is paramount to ensure that travelers receive timely travel updates and manage their reservations without disruptions or errors.
 
-Availability is a critical characteristic, especially for a system that travelers rely on for real-time updates and trip management.
+## Implicit Characters
+### Feasibility (Cost/Time)
+Achieving rapid time-to-market while managing development costs is a feasible goal with the selected "mini-services" architecture.
 
-- The requirement of a maximum of 5 minutes per month of unplanned downtime is demanding. Achieving high availability may involve redundancy, load balancing, and failover mechanisms.
-- Downtime can result in users missing crucial travel updates or being unable to access their trip information, which can have a significant impact on user satisfaction.
+### Security
+Implementing strong authentication and authorization mechanisms is vital to safeguard traveler information and data integrity.
 
-## Responsiveness
+### Maintainability
 
-Responsiveness, in the context of user interfaces, is vital to providing a positive user experience.
+Ensuring clean code, documentation, and knowledge sharing within the development team are essential for long-term system maintainability.
 
-- Meeting the specified response time from the web (800ms) and mobile (First-contentful paint of under 1.4 sec) is essential to ensure that users can interact with the system without delays.
-- A responsive interface is necessary for users to quickly access and manage their travel reservations and receive timely updates.
+### Observability
 
+Implementing comprehensive monitoring and observability solutions enables efficient tracking of system performance and early issue detection for proactive problem-solving.
