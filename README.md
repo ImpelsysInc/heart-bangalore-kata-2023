@@ -199,6 +199,13 @@ This approach balances speed to market with modularity and maintainability.
  
 ### Event Storming
 
+![Identify Events](/Diagrams/event_storming_domain_identification_1.jpg)\
+*Figure: Identify events*
+
+![Group Events](/Diagrams/event_storming_domain_identification_2.jpg)\
+*Figure: Group events*
+
+
 ## Context
 ### Complete Overview
 ![Complete Overview](/Diagrams/c4-complete-overview.png)
