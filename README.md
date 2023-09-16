@@ -171,6 +171,7 @@ This approach balances speed to market with modularity and maintainability.
 ### Availability
 
 - **Independent Deployment**: The architecture's emphasis on independent deployment contributes to high availability. If one mini-service experiences issues or requires maintenance, it does not necessarily impact the availability of other services.
+- **Cluster setup with DR Plan**: All components must be capable of operating in cluster mode and accommodating horizontal scalability. Additionally, the application should be deployable in various regions to address Disaster Recovery (DR) and Business Continuity Planning (BCP) requirements, ensuring compliance with a 99.99% Service Level Agreement (SLA).
 - **Robust Testing and CI/CD**: The inclusion of robust testing and CI/CD practices ensures that new updates can be quickly and reliably deployed, minimizing the likelihood of extended downtime.
 
 ### Performance
