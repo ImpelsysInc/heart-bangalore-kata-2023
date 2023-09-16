@@ -23,7 +23,7 @@ Advantages of EMR
 - **Security**: EMR provides robust security features, including encryption at rest and in transit, integration with AWS Identity and Access Management (IAM), and support for Virtual Private Cloud (VPC) configurations. You can also implement fine-grained access control using security groups and network ACLs.
 - **Elasticity**: EMR can automatically resize clusters based on your workload demands, ensuring that you have the right amount of resources available when needed and minimizing costs during idle periods.
 
-EMR with Flink is cooosen considering the performnace inmemobry, support both stream and batch using sigle code base , multipel programing support 
+We chose EMR with Flink primarily for its high-performance in-memory processing capabilities, its ability to support both streaming and batch processing using a single codebase, and its support for multiple programming languages. 
 
 ## Alternatives Considered
 

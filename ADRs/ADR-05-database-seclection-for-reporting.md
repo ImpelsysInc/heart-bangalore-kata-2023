@@ -12,6 +12,8 @@ Current scalability can be achieved using PostgreSQL, and if the need arises to 
 
 This decision is based on the following considerations:
 
+**Familiar technology**: PostgreSQL is already in use for handling transactional data, which means developers are already familiar with it and require less adaptation to new technologies.
+
 **Mature and Reliable**: PostgreSQL is a mature, open-source relational database management system known for its reliability and stability. It has a proven track record in handling large datasets.
 
 **Scalability**: PostgreSQL offers options for horizontal and vertical scaling, enabling us to handle increasing data volumes and high query loads as our analytics system grows.
