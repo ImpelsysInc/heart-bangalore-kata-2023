@@ -1,7 +1,7 @@
 # Heart Bangalore - O'Reilly Architecture Katas Sept 2023
 
 ![Team Heart Bangalore](/Diagrams/team-heart-bangalore.png)
-## Team Members (Heart Bangalore)  
+## Team Members 
  [Krishnaraj Ramakrishna](https://www.linkedin.com/in/krishnaraj-vr-8869b45/)  
 [Prinjumon Kalyani](https://www.linkedin.com/in/prinjumon-km-98998121/)  
 [Raghu A M](https://www.linkedin.com/in/raghu-a-m-6381b614/)  
