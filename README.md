@@ -215,11 +215,13 @@ This approach balances speed to market with modularity and maintainability.
 ### Mobile App
 ![Complete Overview](/Diagrams/c4-component-mobile.png)
 
-Single code base can used for building iOS and Android App.  
-UIs are broken down into small, reusable components, making it easier to manage complex user interfaces.  
-Use JSX, because it is easier to define component structures and improves code readability.  
-Use firebase for tracking Crashlytics and analytics.  
-Use Optimizely for A/B testing.
+* Single code base can used for building iOS and Android App.  
+* UIs are broken down into small, reusable components, making it easier to manage complex user interfaces.  
+* Use JSX, because it is easier to define component structures and improves code readability.  
+* Use firebase for tracking Crashlytics and Analytics.  
+* Use Optimizely for A/B testing.
+
+React Native and React.js share a similar programming model and the concept of reusable components, they are tailored for different environments. React.js is intended for web applications, while React Native is used for developing native mobile applications. While there is some code reuse potential between React Native and React.js, significant adaptation and platform-specific development are often necessary due to the different nature of web and mobile development.
 
 ## Code
 ### Trip API
