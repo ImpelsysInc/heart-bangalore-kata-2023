@@ -35,7 +35,6 @@ Hello! We are the Heart Bangalore team hailing from Bangalore, India, and we are
 - [Components](#components)
     - [API Application](#api-application)
     - [Batch Process](#batch-process)
-    - [Mobile App](#mobile-app)
 - [Code](#code)
     - [Trip Service](#trip-api-service)
 - [Deployment](#deployment)
@@ -288,9 +287,8 @@ Indicate if they are used for static assets, backups, or other purposes.
  It can also function as a data lake, housing report data and trip data for future analytical purposes.
 #### Application Load Balancers  
 Application Load Balancers for distributing incoming traffic across multiple instances or containers. 
-Our API Gatway uses ALB for providing public access  
-#### API Gateway 
-API Gateway services that manage and secure your APIs.  
+Our Krakend API Gatway uses ALB for providing public access  
+ 
 #### CloudWatch and Metrics 
 Include CloudWatch for monitoring and metrics collection. Show how it integrates with other services.  
 
