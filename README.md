@@ -1,13 +1,13 @@
 # O'Reilly Architecture Katas Sept 2023
 
 ## Team submission for O'Reilly [Architecture Katas Sept 2023]
-
-## Team Members (Heart Bangalore):  
-- [Krishnaraj Ramakrishna](https://www.linkedin.com/in/krishnaraj-vr-8869b45/)  
-- [Prinjumon Kalyani](https://www.linkedin.com/in/prinjumon-km-98998121/)  
-- [Raghu A M](https://www.linkedin.com/in/raghu-a-m-6381b614/)  
-- [Sangeeth Kumar](https://www.linkedin.com/in/sangeeth-kumar-350b8349/)  
-- [Vishwanatha K](https://www.linkedin.com/in/visshh7/) 
+![Team Heart Bangalore](/Diagrams/team-heart-bangalore.png)
+## Team Members (Heart Bangalore)  
+ [Krishnaraj Ramakrishna](https://www.linkedin.com/in/krishnaraj-vr-8869b45/)  
+[Prinjumon Kalyani](https://www.linkedin.com/in/prinjumon-km-98998121/)  
+[Raghu A M](https://www.linkedin.com/in/raghu-a-m-6381b614/)  
+[Sangeeth Kumar](https://www.linkedin.com/in/sangeeth-kumar-350b8349/)  
+[Vishwanatha K](https://www.linkedin.com/in/visshh7/) 
 
 
 ## Contents
