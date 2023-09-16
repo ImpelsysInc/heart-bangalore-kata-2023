@@ -20,8 +20,8 @@
 - [Architecture Characteristics](#architecture-characteristics) 
     - [Driving Characteristics](#driving-characteristics)
     - [Implicit Characteristics](#implicit-characteristics)
-- [Use Journey](#user-journey)
-    - [User experience (UX) design](#user-experience-(UX)-design)
+- [Use Journey](#use-journey)
+    - [User experience (UX) design](#user-experience-ux-design)
 - [Event Storming](#event-storming)
 - [Context](#context)
     - [Complete Overview](#complete-overview)
@@ -183,7 +183,8 @@ This approach balances speed to market with modularity and maintainability.
 
 - **Parallel Development**: Development teams aligned with mini-services can work in parallel on different aspects of the system, allowing for faster development and quicker response to user needs.
 
-## Use Journey  
+## Use Journey 
+ ![User Journey Diagram](/Diagrams/road-warriors-workflow.png)
 ### User experience (UX) design
  ![Dashboard](/Diagrams/ux-dashboard.png)  
  ![Reports](/Diagrams/ux-reports.png) 
