@@ -181,6 +181,14 @@ This approach balances speed to market with modularity and maintainability.
 - **Decomposition of Functionality**: By encapsulating significant functionality within each mini-service, the architecture promotes responsiveness. Services can be optimized for their specific tasks, leading to efficient and responsive interactions with users.
 
 - **Parallel Development**: Development teams aligned with mini-services can work in parallel on different aspects of the system, allowing for faster development and quicker response to user needs.
+
+## Use Journey  
+### User Exeperiance designs
+- [Login](/Diagrams/ux-login.pngDiagram)  
+- [Sign Up](/Diagrams/ux-sign-up.png)
+- [Dashboard](/Diagrams/ux-dashboard.png)  
+- [Add Trip](/Diagrams/ux-add-trip.png)
+- [Reports](/Diagrams/ux-reports)
  
 ### Event Storming
 
@@ -208,7 +216,7 @@ This approach balances speed to market with modularity and maintainability.
 The next diagram models a sample deployment of The Road Warrior system on the AWS Platform. A brief overview of the involved AWS services follows.
 
 ![AWS Infrastructure Architecture](/Diagrams/aws-infra-architecture.png)
-*Figure * AWS Infrastructure Architecture*
+*Figure * AWS Infrastructure Architecture*  
 **Regions**  
  Regions are geographic areas that contain data centers.  
 **Availability Zones**  
@@ -224,7 +232,7 @@ PostgreSQL information on database engines, storage, and replication if applicab
 **Amazon Elastic MapReduce (EMR)**    
 It simplifies the process of processing and analyzing vast amounts of data using popular frameworks like Apache Hadoop, Apache Spark, Apache Hive, Apache HBase, and more.  
 **AWS Amplify**   
-Simplifies the process of building full-stack web and mobile applications. It provides developers with a set of libraries, a command-line interface (CLI), and a set of back-end services to streamline the development and deployment of cloud-powered applications. 
+Simplifies the process of building full-stack web and mobile applications. It provides developers with a set of libraries, a command-line interface (CLI), and a set of back-end services to streamline the development and deployment of cloud-powered applications.  
 **S3 Buckets**  
 Represent Amazon S3 buckets for object storage. Indicate if they are used for static assets, backups, or other purposes.  
 **Load Balancers**  
