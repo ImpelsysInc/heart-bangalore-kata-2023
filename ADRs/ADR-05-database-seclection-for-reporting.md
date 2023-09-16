@@ -1,4 +1,4 @@
-## ADR 010: Adoption of PostgreSQL for Analytics and reporting
+## Database selection for reporting
 
 ### Status: Proposed
 
