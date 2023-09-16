@@ -108,38 +108,29 @@ To ensure a successful system implementation, it's vital to prioritize key archi
 ## Top 3 Characteristics
 ### Scalability
  Scalability allows the system to accommodate a growing user base and increased data volume, ensuring that Road Warrior can scale its services as it gains more users.
-
 ### Availability
 "99.99% uptime" is a High availability, with a maximum of 5 minutes per month of unplanned downtime, is essential to ensure travelers can access their reservations and updates reliably.
-### Responsiveness
- Responsiveness in the user interface is vital for providing a positive user experience, allowing travelers to quickly access and manage their travel information.
-
- ## Other Characteristics
-### Interoperability
- Interoperability is crucial to seamlessly integrate with external travel systems and agencies, ensuring smooth data exchange and collaboration.
-
-### Elasticity
- Elasticity enables the system to dynamically scale resources up or down in response to varying workloads, ensuring cost-efficiency and optimal performance.
-
 ### Performance
  Performance optimization is critical to meet the specified response times and deliver real-time travel updates quickly and efficiently.
 
+## Other Characteristics
+### Interoperability
+ Interoperability is crucial to seamlessly integrate with external travel systems and agencies, ensuring smooth data exchange and collaboration.
+### Elasticity
+ Elasticity enables the system to dynamically scale resources up or down in response to varying workloads, ensuring cost-efficiency and optimal performance.
+### Responsiveness
+ Responsiveness in the user interface is vital for providing a positive user experience, allowing travelers to quickly access and manage their travel information.
 ### Reliability
  Reliability is paramount to ensure that travelers receive timely travel updates and manage their reservations without disruptions or errors.
 
 ## Implicit Characters
 ### Feasibility (Cost/Time)
 Achieving rapid time-to-market while managing development costs is a feasible goal with the selected "mini-services" architecture.
-
 ### Security
 Implementing strong authentication and authorization mechanisms is vital to safeguard traveler information and data integrity.
-
 ### Maintainability
-
 Ensuring clean code, documentation, and knowledge sharing within the development team are essential for long-term system maintainability.
-
 ### Observability
-
 Implementing comprehensive monitoring and observability solutions enables efficient tracking of system performance and early issue detection for proactive problem-solving.
 
 ## Architecture Approach
@@ -148,6 +139,7 @@ Implementing comprehensive monitoring and observability solutions enables effici
 *Figure: Architecture Style*
 
 Based on the architecture charetrisctis we prefer to use the microservices based style.
+
 #### Options for service granularity
 ![Service Granularity](/Diagrams/service-granularity.png)\
 *Figure: Option for Service Granularity. Credits: Gartner*
@@ -181,11 +173,9 @@ This approach balances speed to market with modularity and maintainability.
 - **Independent Deployment**: The architecture's emphasis on independent deployment contributes to high availability. If one mini-service experiences issues or requires maintenance, it does not necessarily impact the availability of other services.
 - **Robust Testing and CI/CD**: The inclusion of robust testing and CI/CD practices ensures that new updates can be quickly and reliably deployed, minimizing the likelihood of extended downtime.
 
-### Responsiveness
-
-- **Decomposition of Functionality**: By encapsulating significant functionality within each mini-service, the architecture promotes responsiveness. Services can be optimized for their specific tasks, leading to efficient and responsive interactions with users.
-
-- **Parallel Development**: Development teams aligned with mini-services can work in parallel on different aspects of the system, allowing for faster development and quicker response to user needs.
+### Performance
+- **Data access Performance**: Achitecture emphasis on choosing the right database and optimize the access and horizondtable scalability to meet the response time.
+- **Application performance**: Optmized programing language and horizondal scaling of application nodes to meet the scale and performance. Serve the contents from CDN and otpimized mobile application code.
 
 ## Use Journey 
  ![User Journey Diagram](/Diagrams/road-warriors-workflow.png)
