@@ -150,7 +150,7 @@ The following section highlights the architecure characteristics we consider cru
 ## Deployment
 The next diagram models a sample deployment of The Road Warrior system on the AWS Platform. A brief overview of the involved AWS services follows.
 
-![AWS](/Diagrams/TheRoadWarriorInfraDiagram.png)
+![AWS Infrastructure Architecture](/Diagrams/aws-infra-architecture.png)
 *Figure * AWS Deployment Architecture*
 
 
