@@ -299,12 +299,20 @@ Represent Amazon Simple Notification Service (SNS) and Simple Queue Service (SQS
 - [ADR-09:Datastore selection for barch process](/ADRs/ADR-09-datastore-selection-for-barch-process.md)
 - [ADR-10:GDPR compliance](/ADRs/ADR-10-GDPR-compliance.md)
 
+## Glossary
+- **AWS** - Amazon Web Services
+- **EKS** - Elastic Kubernets Cluster
+- **EMR** - Elastic Map Reduce
+- **S3** - Simple Storage Service
+- **OTA** - Online Travel Agencies. (i.e, MakeMyTrip, Booking.com)
+- **GDS** - Global Distribution System. (i.e, SABRE, APOLLO) 
+- **B2B** - Business to Business
+- **Agencies** - Refering to Onlnie Travel Agencies (OTA)
+  
 ## References
-- C4
-- Event storming
-- Kata Event
-
-
+- [C4 Diagrams](https://c4model.com/)
+- [Event storming](https://en.wikipedia.org/wiki/Event_storming)
+- [Architecture Kata Event](https://learning.oreilly.com/featured/architectural-katas/)
 
 
 
