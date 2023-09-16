@@ -183,6 +183,7 @@ This approach balances speed to market with modularity and maintainability.
 - **Parallel Development**: Development teams aligned with mini-services can work in parallel on different aspects of the system, allowing for faster development and quicker response to user needs.
  
 ### Event Storming
+
 ## Context
 ### Complete Overview
 ![Complete Overview](/Diagrams/c4-complete-overview.png)
@@ -193,9 +194,11 @@ This approach balances speed to market with modularity and maintainability.
 ![Complete Overview](/Diagrams/c4-container-road-warrior-system.png)
 ## Components
 ### API Application
-![Complete Overview](/Diagrams/c4-container-road-warrior-system.png)
+![Complete Overview](/Diagrams/c4-component-api%20application.png)
 ### Batch Process
 ![Complete Overview](/Diagrams/c4-component-batch-processor.png)
+#### Batch Process sequence diagram
+![Complete Overview](/Diagrams/batch-process-sequnce-diagram.png)
 ### Mobile App
 ![Complete Overview](/Diagrams/c4-container-road-warrior-system.png)
 ## Code
