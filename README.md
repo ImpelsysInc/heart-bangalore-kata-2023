@@ -104,9 +104,9 @@ Online travel market growth rate is expected to grow at a CAGR of 10.3% over the
 5.	Capability to personalize the options by providing recommendations in the form of updates or advertisements as rendered by the B2B segments
 
 ### Other Considerations 
-**Personalized Recommendations:** AI can analyze user preferences, past travel history, and behavior to provide highly personalized travel recommendations. This includes suggesting destinations, hotels, activities, and even travel itineraries tailored to individual preferences.  
-**Augmented Reality (AR):** AR apps can provide travelers with immersive experiences, such as virtual tours of destinations or navigation assistance in unfamiliar locations.  
-**AI Chatbots:** AI chatbots can handle customer inquiries, provide real-time support, and assist with last-minute changes to travel plans.
+- **Personalized Recommendations:** AI can analyze user preferences, past travel history, and behavior to provide highly personalized travel recommendations. This includes suggesting destinations, hotels, activities, and even travel itineraries tailored to individual preferences.  
+- **Augmented Reality (AR):** AR apps can provide travelers with immersive experiences, such as virtual tours of destinations or navigation assistance in unfamiliar locations.  
+- **AI Chatbots:** AI chatbots can handle customer inquiries, provide real-time support, and assist with last-minute changes to travel plans.
 
 ## Architecture Characteristics
 To ensure a successful system implementation, it's vital to prioritize key architecture characteristics. These elements guarantee reliability, availability, and responsiveness, delivering a seamless user experience.
