@@ -3,7 +3,7 @@
 To ensure a successful system implementation, it's vital to prioritize key architecture characteristics. These elements guarantee reliability, availability, and responsiveness, delivering a seamless user experience.
 
 
-![Alt text](Diagrams/architecture-characteristic.png)
+![Architecture Characteristics](/Diagrams/architecture-characteristic.png)
 *Figure: Architecture Characteristics*
 
 ## Top 3 Characteristics

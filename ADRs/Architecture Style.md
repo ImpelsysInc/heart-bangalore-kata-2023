@@ -1,6 +1,6 @@
 # Architecture Style
 
-![Service Granularity](Diagrams/service-granularity.png)
+![Service Granularity](/Diagrams/service-granularity.png)
 *Figure: Service Granularity*
 
 Microservices are not the only alternative to monolithic architectures. A real-world architecture will have services at different levels of granularity. In addition to microservices, Gartner has identified two other “services” patterns: As shown in Figure, these represent points between monolith and microservice on a spectrum of options. As we move further to the right, we are gaining development agility, deployment flexibility and precision of scalability. However, we are giving up data integrity, and the complexity of the application architecture is increasing.
@@ -9,7 +9,7 @@ As a startup, Road Warrior prioritizes rapid time-to-market while seeking the be
 
 By adopting a "mini-services" architecture, Road Warrior can strike a balance between rapid development and modularity. This approach allows for quicker iterations, parallel development efforts, and the ability to release new features to the market faster while maintaining a structured and maintainable codebase.
 
-![Architecture Style](Diagrams/architecture-style.png)
+![Architecture Style](/Diagrams/architecture-style.png)
 *Figure: Architecture Style*
 
 - Miniservices are similar to microservices but have a larger scope and relaxed architectural constraints. 
