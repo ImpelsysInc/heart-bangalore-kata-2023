@@ -200,11 +200,25 @@ This approach balances speed to market with modularity and maintainability.
 - [Adobe-XD walkthrough](https://xd.adobe.com/view/2771a735-f300-447d-b192-2e5f9d16369f-7222/?fullscreen)
  
 ## Event Storming
-![Identify Events](/Diagrams/event_storming_domain_identification_1.jpg)\
+
+Event storming drives greater understanding and productivity by simplifying the approach and including multiple levels of stakeholders in the business. With the help of sticky notes and a willing group, you can reveal your business processes more efficiently and enjoyably.
+
+### Identify domain events
+The first step is to begin identifying events. Events are “things that happen” in a process or system. Important events trigger reactions, so understanding the causal event can help you understand how the system operates and why. Keep in mind that events are always noted in the past tense.
+![Identify domain events](/Diagrams/event-storming-events.jpg)\
 *Figure: Identify events*
 
-![Group Events](/Diagrams/event_storming_domain_identification_2.jpg)\
-*Figure: Group events*
+### Connect domain events to commands
+With your events outlined, you can begin to evaluate each event for its causes and consequences. In other words, ask yourself what triggered this event (e.g., users, other events, or external systems).
+
+![Identify bounded context and aggregates](/Diagrams/event-storming-command.jpg)\
+*Figure: connect domain events to commands*
+
+### Identify bounded context and aggregates
+For high-level event storming, the process can end once your team has added domain events, commands, and reactions. However, event storming can be combined with the technique of domain-driven design to define the structure of your system and send your team on the way to implementation.
+
+![Identify bounded context and aggregates](/Diagrams/event-storming-context.jpeg)\
+*Figure: bounded context and aggregates*
 
 ## Context
 ### Complete Overview
