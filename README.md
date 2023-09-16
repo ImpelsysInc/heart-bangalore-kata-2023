@@ -214,6 +214,13 @@ This approach balances speed to market with modularity and maintainability.
 ## Code
 ### Trip API
 ![Complete Overview](/Diagrams/c4-code-tripservice.png)
+
+**Handlers** - Handlers in Go are used to handle incoming HTTP requests. When a request is received, the handler processes it, performs the necessary business logic, and generates an HTTP response.
+
+**Service** - The service class abstracts and encapsulates the core business logic for a specific domain.It defines methods and functions that represent the operations that can be performed within that domain.
+
+**Repo** - The repository abstracts the details of how data is stored and retrieved. It provides high-level methods for performing CRUD (Create, Read, Update, Delete) operations on a specific domain entity, such as a trips, userdetails.
+
 ## Deployment
 The next diagram models a sample deployment of The Road Warrior system on the AWS Platform. A brief overview of the involved AWS services follows.
 
