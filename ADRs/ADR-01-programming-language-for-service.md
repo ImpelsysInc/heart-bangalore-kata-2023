@@ -1,4 +1,4 @@
-## ADR 002: Adoption of Programming Language for Microservices
+## Programming Language for Microservices
 ## Status: Proposed
 
 ## Context
