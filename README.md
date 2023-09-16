@@ -184,11 +184,11 @@ This approach balances speed to market with modularity and maintainability.
 
 ## Use Journey  
 ### User Exeperiance designs
-- [Login](/Diagrams/ux-login.pngDiagram)  
+- [Login](/Diagrams/ux-login.png)  
 - [Sign Up](/Diagrams/ux-sign-up.png)
 - [Dashboard](/Diagrams/ux-dashboard.png)  
 - [Add Trip](/Diagrams/ux-add-trip.png)
-- [Reports](/Diagrams/ux-reports)
+- [Reports](/Diagrams/ux-reports.png)
  
 ### Event Storming
 
