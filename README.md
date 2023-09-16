@@ -56,19 +56,24 @@ The Road Warrior wants to build the next generation online trip management Dashb
 **US-08:** Road Warrior gathers analytical data from users trips for various purposes - travel trends, locations, airline and hotel vendor preferences, cancellation and update frequency, and so on.\
 **US-09:** Must integrate seamlessly with existing travel systems (i.e, SABRE, APOLLO).\
 **US-10:** Must integrate with preferred travel agency for quick problem resolution (help me!).
+**US-11:** Must work internationally.\
 
 ### Technical Requirements
-**US-11:** Richest user interface possible across all deployment platforms.\
-**US-12:** Must work internationally.\
+**US-12:** Richest user interface possible across all deployment platforms.\
 **US-13:** Users must be able to access the system at all times (max 5 minutes per month of unplanned downtime).\
 **US-14:** Travel updates must be presented in the app within 5 minutes of generation by the source.\
 **US-15:** Response time from web (800ms) and mobile (First-contentful paint of under 1.4 sec)
+**US-16:** Supports minimum 2 million active users/week
+**US-17:** Supports total users: 15 million (user accounts)
 
 ## Assumptions
 * Actual trip bookings are done externally, and the application is only a dashboard to aggregate trips.
 * Notifications are not part of the basic requirements.
 * Payment integration is not required because we are not directly managing bookings.
 * Revenue generation is not an initial requirement; the current requirement is to add customers to the system.
+* Travel agencies and SABRE, APOLLO are pre configured in the system
+* Help me !! link only redirect to the respecitve agency site if agency information is available in the trip
+* User will provide his hometown location while registering for localization
 
 ## Market Research
 
