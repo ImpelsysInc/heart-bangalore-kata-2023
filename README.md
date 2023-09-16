@@ -17,8 +17,10 @@
     - [Market Research](#market-research)
     - [Other Considerations](#other-considerations)
 - [Architecture Characteristics](#architecture-characteristics) 
-    - [Driving Characteristics](#driving-characteristics)
+    - [Top 3 Characteristics](#top-3-characteristics)
     - [Implicit Characteristics](#implicit-characteristics)
+    - [Implicit Characteristics](#other-characteristics)
+- [Architecture Approach](#architecture-approach)
 - [Use Journey](#use-journey)
     - [User experience (UX) design](#user-experience-ux-design)
 - [Event Storming](#event-storming)
@@ -32,7 +34,7 @@
     - [Batch Process](#batch-process)
     - [Mobile App](#mobile-app)
 - [Code](#code)
-    - [Trip Service](#trip-service)
+    - [Trip Service](#trip-api-service)
 - [Deployment](#deployment)
 - [Cost Analysis](#cost-analysis)
 - [Evaluation, Risks and Architecture Fitness](#evaluation-risks-and-architecture-fitness)  
@@ -99,7 +101,7 @@ Online travel market growth rate is expected to grow at a CAGR of 10.3% over the
 **Augmented Reality (AR):** AR apps can provide travelers with immersive experiences, such as virtual tours of destinations or navigation assistance in unfamiliar locations.  
 **AI Chatbots:** AI chatbots can handle customer inquiries, provide real-time support, and assist with last-minute changes to travel plans.
 
-## System Architecture Characteristics
+## Architecture Characteristics
 To ensure a successful system implementation, it's vital to prioritize key architecture characteristics. These elements guarantee reliability, availability, and responsiveness, delivering a seamless user experience.
 
 ![Architecture Characteristics](/Diagrams/architecture-characteristic.png)
@@ -113,6 +115,16 @@ To ensure a successful system implementation, it's vital to prioritize key archi
 ### Performance
  Performance optimization is critical to meet the specified response times and deliver real-time travel updates quickly and efficiently.
 
+## Implicit Characteristics
+### Feasibility (Cost/Time)
+Achieving rapid time-to-market while managing development costs is a feasible goal with the selected "mini-services" architecture.
+### Security
+Implementing strong authentication and authorization mechanisms is vital to safeguard traveler information and data integrity. Also storing the PII data like trip information needs to be protected and handle properly due to compliance like GDPR
+### Maintainability
+Ensuring clean code, documentation, and knowledge sharing within the development team are essential for long-term system maintainability.
+### Observability
+Implementing comprehensive monitoring and observability solutions enables efficient tracking of system performance and early issue detection for proactive problem-solving.
+
 ## Other Characteristics
 ### Interoperability
  Interoperability is crucial to seamlessly integrate with external travel systems and agencies, ensuring smooth data exchange and collaboration.
@@ -122,16 +134,6 @@ To ensure a successful system implementation, it's vital to prioritize key archi
  Responsiveness in the user interface is vital for providing a positive user experience, allowing travelers to quickly access and manage their travel information.
 ### Reliability
  Reliability is paramount to ensure that travelers receive timely travel updates and manage their reservations without disruptions or errors.
-
-## Implicit Characters
-### Feasibility (Cost/Time)
-Achieving rapid time-to-market while managing development costs is a feasible goal with the selected "mini-services" architecture.
-### Security
-Implementing strong authentication and authorization mechanisms is vital to safeguard traveler information and data integrity. Also storing the PII data like trip information needs to be protected and handle properly due to compliance like GDPR
-### Maintainability
-Ensuring clean code, documentation, and knowledge sharing within the development team are essential for long-term system maintainability.
-### Observability
-Implementing comprehensive monitoring and observability solutions enables efficient tracking of system performance and early issue detection for proactive problem-solving.
 
 ## Architecture Approach
 ### Architecture Style
@@ -235,7 +237,7 @@ Refer ADR-07 and ADR-09 for process engine and job datastore selection
 React Native and React.js share a similar programming model and the concept of reusable components, they are tailored for different environments. React.js is intended for web applications, while React Native is used for developing native mobile applications. While there is some code reuse potential between React Native and React.js, significant adaptation and platform-specific development are often necessary due to the different nature of web and mobile development.
 
 ## Code
-### Trip API
+### Trip API Service
 ![Complete Overview](/Diagrams/c4-code-tripservice.png)
 
 **Handlers** - Handlers in Go are used to handle incoming HTTP requests. When a request is received, the handler processes it, performs the necessary business logic, and generates an HTTP response.
