@@ -1,6 +1,9 @@
 # Heart Bangalore - O'Reilly Architecture Katas Sept 2023
 
 ![Team Heart Bangalore](/Diagrams/team-heart-bangalore.png)
+
+Hey!! we are Heart Bangalore team from Banglore India presenting the soluton for Kata event.
+
 ## Team Members 
  [Krishnaraj Ramakrishna](https://www.linkedin.com/in/krishnaraj-vr-8869b45/)  
 [Prinjumon Kalyani](https://www.linkedin.com/in/prinjumon-km-98998121/)  
