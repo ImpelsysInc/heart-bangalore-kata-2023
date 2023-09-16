@@ -7,6 +7,8 @@ We need to choose the technology stack for building the mobile application. The 
 ## Decision
 We have decided to adopt React Native as our primary framework for building the mobile application for the following reasons:
 
+**Faster developemt**: As we need to target two different operating systems, it is better to start with a cross-platform technology for our startup, and later we can enhance it as needed.Also we can include native components in react native projects.
+
 **Cross-Platform Compatibility**: React Native allows us to develop a single codebase that can be used to build apps for both iOS and Android platforms, reducing development time and cost.
 
 **Code Reusability**: React Native promotes code reusability by enabling us to share a significant portion of our codebase, including business logic and some UI components, between the two platforms.
@@ -24,14 +26,12 @@ Developers will need to learn React Native and may need time to adapt to mobile-
 We will need to manage platform-specific code and modules for any functionalities that are not readily available in React Native's core.
 ## Alternatives
 ## Alternative 1: Native Development (iOS and Android)
-**Pros**: Full control over platform-specific features, optimal performance.
+**Pros**: Full control over platform-specific features, optimal performance.  
 **Cons**: Requires separate codebases for iOS and Android, longer development timelines, and potentially higher costs.
+
 ## Alternative 2: Xamarin
-**Pros**: Cross-platform capability, C# language support, integration with Visual Studio.
+**Pros**: Cross-platform capability, C# language support, integration with Visual Studio.  
 **Cons**: Smaller community compared to React Native, may require additional licensing for some features.
+
 # Decision Rationale
 React Native was chosen because it aligns with our project requirements for cross-platform development, code reusability, and performance. While other alternatives were considered, React Native's combination of developer productivity, performance, and a thriving community makes it a strong choice for our mobile app development project.
-
-## References
-React Native Documentation
-React Native Community
