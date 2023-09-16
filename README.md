@@ -1,6 +1,5 @@
-# O'Reilly Architecture Katas Sept 2023
+# Heart Bangalore - O'Reilly Architecture Katas Sept 2023
 
-## Team submission for O'Reilly [Architecture Katas Sept 2023]
 ![Team Heart Bangalore](/Diagrams/team-heart-bangalore.png)
 ## Team Members (Heart Bangalore)  
  [Krishnaraj Ramakrishna](https://www.linkedin.com/in/krishnaraj-vr-8869b45/)  
