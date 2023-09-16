@@ -232,17 +232,6 @@ Refer ADR-07 and ADR-09 for process engine and job datastore selection
 3. Once the EMR cluster with Flink is up and running, it retrieves jobs from the Jobs Database and commences the aggregation of trip data based on reservations for individual users. This process also involves the generation of necessary reporting facts and dimensions. Upon job completion, the trip data and reporting summary are stored in CSV format within an S3 bucket. Following this, the same dataset is loaded into both the transactional and reporting databases using the "loadfile" command, ensuring efficient data ingestion into the database systems
 
 
-### Mobile App
-![Complete Overview](/Diagrams/c4-component-mobile.png)
-
-* Single code base can used for building iOS and Android App.  
-* UIs are broken down into small, reusable components, making it easier to manage complex user interfaces.  
-* Use JSX, because it is easier to define component structures and improves code readability.  
-* Use firebase for tracking Crashlytics and Analytics.  
-* Use Optimizely for A/B testing.
-
-React Native and React.js share a similar programming model and the concept of reusable components, they are tailored for different environments. React.js is intended for web applications, while React Native is used for developing native mobile applications. While there is some code reuse potential between React Native and React.js, significant adaptation and platform-specific development are often necessary due to the different nature of web and mobile development.
-
 ## Code
 ### Trip API Service
 ![Complete Overview](/Diagrams/c4-code-tripservice.png)
