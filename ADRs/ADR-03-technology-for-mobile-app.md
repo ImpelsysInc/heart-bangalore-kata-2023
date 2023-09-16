@@ -1,4 +1,4 @@
-## ADR 007: Adoption of React Native for Mobile App Development
+## Technology for mobile application
 
 ### Status: Proposed
 
