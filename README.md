@@ -164,8 +164,37 @@ Implementing comprehensive monitoring and observability solutions enables effici
 The next diagram models a sample deployment of The Road Warrior system on the AWS Platform. A brief overview of the involved AWS services follows.
 
 ![AWS Infrastructure Architecture](/Diagrams/aws-infra-architecture.png)
-*Figure * AWS Deployment Architecture*
-
+*Figure * AWS Infrastructure Architecture*
+**Regions**  
+ Regions are geographic areas that contain data centers.  
+**Availability Zones**  
+Within each region, indicate the availability zones (AZs) that your resources span. AZs are physically separate data centers with redundant power, cooling, and networking.  
+**VPC (Virtual Private Cloud)**  
+Virtual Private Cloud(s) in use. A VPC provides a private network for your AWS resources.  
+**Subnets**    
+Subnets are subdivisions of your VPC and can be public or private.  
+**EC2 Instances**    
+EC2 instances (virtual servers) within your subnets. Specify their instance types and roles (e.g., web server, database server). 
+**RDS (Relational Database Service)**    
+PostgreSQL information on database engines, storage, and replication if applicable.    
+**Amazon Elastic MapReduce (EMR)**    
+It simplifies the process of processing and analyzing vast amounts of data using popular frameworks like Apache Hadoop, Apache Spark, Apache Hive, Apache HBase, and more.  
+**AWS Amplify**   
+Simplifies the process of building full-stack web and mobile applications. It provides developers with a set of libraries, a command-line interface (CLI), and a set of back-end services to streamline the development and deployment of cloud-powered applications. 
+**S3 Buckets**  
+Represent Amazon S3 buckets for object storage. Indicate if they are used for static assets, backups, or other purposes.  
+**Load Balancers**  
+Elastic Load Balancers for distributing incoming traffic across multiple instances or containers.  
+**Lambda Functions**  
+AWS Lambda functions for serverless computing. Describe their triggers and the services they interact with.  
+**API Gateway**  
+API Gateway services that manage and secure your APIs.  
+**Elasticache**  
+Elasticache clusters if caching is used to improve application performance.  
+**CloudWatch and Metrics**  
+Include CloudWatch for monitoring and metrics collection. Show how it integrates with other services.  
+**SNS and SQS**  
+Represent Amazon Simple Notification Service (SNS) and Simple Queue Service (SQS) if used for messaging and event-driven architecture.
 ## Cost Analysis
 ## Evaluation, Risks and Architecture Fitness  
 ## ADRs
