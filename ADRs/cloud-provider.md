@@ -1,4 +1,4 @@
-# 2022-11-08 ADR07 Azure as a Hyperscaler
+# AWS Cloud Provider
 
 ## Title
 Choosing the infrastructure (public cloud provider) for Road Warriors startup
