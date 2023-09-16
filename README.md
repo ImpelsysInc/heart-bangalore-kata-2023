@@ -15,22 +15,25 @@
 - [Requirements](#requirements)
     - [Business Requirments](#business-requirments)  
     - [Technical Requirements](#technical-requirements)
-    - [Market Research](#market-research) 
+    - [Market Research](#market-research)
+    - [Other Considerations](#other-considerations)
 - [Architecture Characteristics](#architecture-characteristics) 
     - [Driving Characteristics](#driving-characteristics)
     - [Implicit Characteristics](#implicit-characteristics)
 - [Use Journey](#user-journey)
     - [ux](#ux)
 - [Event Storming](#event-storming)
-- [Context](#context)  
+- [Context](#context)
+    - [Complete Overview](#complete-overview)
+    - [Context Diagram](#context-diagram)
 - [Containers](#containers)
-    - [API Layer](#api-layer)
-    - [Batch-Process](#service-containers)
+    - [Road Warrior System](#road-warrior-system)
 - [Components](#components)
-    - [Identity and Access Manager](#identity-and-access-manager)
-    - [Profile Manager](#profile-manager)
-    - [Connections Manager](#connections-manager)
-    - [Reporting and Analytics Manager](#reporting-and-analytics-manager)
+    - [API Application](#api-application)
+    - [Batch Process](#batch-process)
+    - [Mobile App](#mobile-app)
+- [Code](#code)
+    - [Trip Service](#trip-service)
 - [Deployment](#deployment)
 - [Cost Analysis](#cost-analysis)
 - [Evaluation, Risks and Architecture Fitness](#evaluation-risks-and-architecture-fitness)  
@@ -42,23 +45,23 @@ The Road Warrior wants to build the next generation online trip management Dashb
 ## Requirements
 
 ### Business Requirments
-**US-01:** Poll E-Mail looking for travel-related E-Mail. \
-**US-02:** Filter and whitelist certain E-Mails \
+**US-01:** Poll E-Mail looking for travel-related E-Mail.\
+**US-02:** Filter and whitelist certain E-Mails.\
 **US-03:** The system must interface with the agency’s existing airline, hotel, and car rental interface system to update travel details (delays, cancellations, updates, gate changes, etc.). Updates must be in the app within 5 minutes of an update (better than the competition).\
 **US-04:** Customers should be able to add, update, or delete existing reservations manually as well.\
 **US-05:** Items in the dashboard should be able to be grouped by trip, and once the trip is complete, the items should automatically be removed from the dashboard.\
 **US-06:** Users should also be able to share their trip information by interfacing with standard social media sites or allowing targeted people to view your trip.\
 **US-07:** Provide end-of-year summary reports for users with a wide range of metrics about their travel usage.\
-**US-08:** Road Warrior gathers analytical data from users trips for various purposes - travel trends, locations, airline and hotel vendor preferences, cancellation and update frequency, and so on.
+**US-08:** Road Warrior gathers analytical data from users trips for various purposes - travel trends, locations, airline and hotel vendor preferences, cancellation and update frequency, and so on.\
 **US-09:** Must integrate seamlessly with existing travel systems (i.e, SABRE, APOLLO).\
-**US-10:** Must integrate with preferred travel agency for quick problem resolution (help me!).\
+**US-10:** Must integrate with preferred travel agency for quick problem resolution (help me!).
 
 ### Technical Requirements
 **US-11:** Richest user interface possible across all deployment platforms.\
 **US-12:** Must work internationally.\
 **US-13:** Users must be able to access the system at all times (max 5 minutes per month of unplanned downtime).\
 **US-14:** Travel updates must be presented in the app within 5 minutes of generation by the source.\
-**US-15:** Response time from web (800ms) and mobile (First-contentful paint of under 1.4 sec)\
+**US-15:** Response time from web (800ms) and mobile (First-contentful paint of under 1.4 sec)
 
 ## Market Research
 
@@ -74,10 +77,10 @@ Online travel market growth rate is expected to grow at a CAGR of 10.3% over the
 4.	Travel globalization with cheaper and easier travel options 
 
 ### Key online travel market targeted segments
-•	Transportation (Airlines, Car Rental, Rail, Cruise, and others)
-•	Travel Accommodation (Hotels and resorts)
-•	Travel Intermediation (Online Travel Agencies, Tour Operator Websites, and Others)
-•	Personalized travel guide and recommendations
+1.	Transportation (Airlines, Car Rental, Rail, Cruise, and others)
+2.	Travel Accommodation (Hotels and resorts)
+3.	Travel Intermediation (Online Travel Agencies, Tour Operator Websites, and Others)
+4.	Personalized travel guide and recommendations
 
 ### Current Traveler booking challenges on online websites.
 1.	Lack of end-to-end travel advisor platform connecting to various established travel segments based on traveller preferences. 
@@ -136,16 +139,14 @@ Ensuring clean code, documentation, and knowledge sharing within the development
 Implementing comprehensive monitoring and observability solutions enables efficient tracking of system performance and early issue detection for proactive problem-solving.
 
 ## Architecture Approach
-
 ### Architecture Style
-
 ![Architecture Style](/Diagrams/architecture-style.png)
 *Figure: Architecture Style*
 
 Based on the architecture charetrisctis we prefer to use the microservices based style.
-
-![Service Granularity](/Diagrams/service-granularity.png)
-*Figure: Service Granularity*
+#### Options for service granularity
+![Service Granularity](/Diagrams/service-granularity.png)\
+*Figure: Option for Service Granularity. Credits: Gartner*
 
 Microservices are not the only alternative to monolithic architectures. A real-world architecture will have services at different levels of granularity. In addition to microservices, Gartner has identified two other “services” patterns: As shown in Figure, these represent points between monolith and microservice on a spectrum of options. As we move further to the right, we are gaining development agility, deployment flexibility and precision of scalability. However, we are giving up data integrity, and the complexity of the application architecture is increasing.
 
@@ -194,16 +195,16 @@ This approach balances speed to market with modularity and maintainability.
 ![Complete Overview](/Diagrams/c4-container-road-warrior-system.png)
 ## Components
 ### API Application
-![Complete Overview](/Diagrams/c4-component-api%20application.png)
+![Complete Overview](/Diagrams/c4-component-api-application.png)
 ### Batch Process
 ![Complete Overview](/Diagrams/c4-component-batch-processor.png)
 #### Batch Process sequence diagram
 ![Complete Overview](/Diagrams/batch-process-sequnce-diagram.png)
 ### Mobile App
-![Complete Overview](/Diagrams/c4-container-road-warrior-system.png)
+![Complete Overview](/Diagrams/c4-component-mobile.png)
 ## Code
 ### Trip API
-![Complete Overview](/Diagrams/c4-container-road-warrior-system.png)
+![Complete Overview](/Diagrams/c4-code-tripservice.png)
 ## Deployment
 The next diagram models a sample deployment of The Road Warrior system on the AWS Platform. A brief overview of the involved AWS services follows.
 
