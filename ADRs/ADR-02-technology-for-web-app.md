@@ -1,4 +1,4 @@
-## ADR 006: Adoption of React.js for Rich User Interface
+## Technology for web application
 
 
 ### Status: Proposed
