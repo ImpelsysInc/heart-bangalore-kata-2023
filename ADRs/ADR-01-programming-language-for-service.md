@@ -43,7 +43,3 @@ Team members who are not already familiar with Go can easily learn it since it i
 ## Decision Rationale
 Go was chosen because it aligns with our project requirements for Faster developemnt, minimal learning curve, high performance, scalability, and maintainability. Its built-in concurrency support, strong ecosystem, and static typing make it well-suited for building backend services efficiently. While other alternatives were considered, Go's combination of performance and simplicity makes it a strong choice for our software development project.
 
-## References
-Go Programming Language  
-Gin Web Framework
-
