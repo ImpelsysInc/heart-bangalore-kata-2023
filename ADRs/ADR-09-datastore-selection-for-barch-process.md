@@ -1,4 +1,4 @@
-# Datastore selection for barch process workload
+# Seperate datastore for barch process workload
 
 ## Title
 Chooseing the database engine for storing jobs db for faster access to parellel processing system.
@@ -6,32 +6,27 @@ Chooseing the database engine for storing jobs db for faster access to parellel 
 Proposed
 
 ## Context
-Since the batch processing system needs to access more than 15 Million users related job data for every 5 minues, access needs to be faster . It also need to support adding new jobs information or deleting job information at a high rate. It can also store list of users as single file using hash algorithm but the batch files need to be modified if any user changes.
+Since the batch processing system needs to access more than 15 Million users related job data for every 5 minues, access needs to be faster . It also need to support adding new jobs information or deleting job information at a high rate. 
 
 ## Decision
 
-Use the S3 for storing User jobs and the files will be storing based on the User identifier ( Internal system identifier ) and the batch process ( Elastic map reduce ) can access the data parellelly using the specific folder . Using the parellel processing high volume of data can be processed.
+Utilize Amazon S3 as the storage repository for user jobs, with data organization structured around the user's internal system identifier. This arrangement enables Elastic MapReduce (EMR) to access the data concurrently by targeting specific folders. Leveraging this parallel processing approach facilitates the efficient processing of large volumes of data.   
+Additionally, it's possible to store a list of users as a single file to further optimize processing job performance. This approach, while increasing the complexity of modifications, is ideally suited for grouping user data based on their creation time.
 
 ## Alternatives Considered
+- Use In memory database like MemSQL,Apache and Ignite VoltDB for Faster access
+- Use Hive, Cassandra and other scalable database for bigdata access
+- Use NoSql database like Big Query to get data at a faster pace.
 
-- Use In memory database for Faster access
-- Use Hive, Cassandra that support and parellel access
-- Use Big Query
-
+## Rationale
+Using this approach ensure
+1. Exceptional scalability without concerns about downtime or maintenance.
+2. Cost-effectiveness at its core.
+3. Ensured scalability and robustness of the application.
 
 ## Consequences
- 
-Adaption of S3 will lead to following consequences:
 
-1. High scalablity and no worry on the downtime or maintanance.
-
-2. Low cost
-
-3. Scalability and robustness of the application.
-
-Drawbacks
-
-File operations. But due to s3 scalablity and parellel processing that can be mitigated.
+S3 is an object store and related limitations. But due to s3 scalablity and parellel processing that can be mitigated.
 
 ## Conclusion
 
