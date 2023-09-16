@@ -2,7 +2,7 @@
 
 ![Team Heart Bangalore](/Diagrams/team-heart-bangalore.png)
 
-Hey!! we are Heart Bangalore team from Banglore,India presenting the soluton for O'Reilly Architecture Katas Sept 2023
+Hello! We are the Heart Bangalore team hailing from Bangalore, India, and we are here to present our solution for the O'Reilly Architecture Katas in September 2023.
 
 ## Team Members 
  [Krishnaraj Ramakrishna](https://www.linkedin.com/in/krishnaraj-vr-8869b45/)  
