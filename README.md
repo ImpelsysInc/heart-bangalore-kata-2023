@@ -22,7 +22,7 @@ Hello! We are the Heart Bangalore team hailing from Bangalore, India, and we are
 - [Architecture Characteristics](#architecture-characteristics) 
     - [Top 3 Characteristics](#top-3-characteristics)
     - [Implicit Characteristics](#implicit-characteristics)
-    - [Implicit Characteristics](#other-characteristics)
+    - [Other Characteristics](#other-characteristics)
 - [Architecture Approach](#architecture-approach)
 - [Use Journey](#use-journey)
     - [User experience (UX) design](#user-experience-ux-design)
