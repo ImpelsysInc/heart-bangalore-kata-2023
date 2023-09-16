@@ -139,6 +139,11 @@ Implementing comprehensive monitoring and observability solutions enables effici
 
 ### Architecture Style
 
+![Architecture Style](/Diagrams/architecture-style.png)
+*Figure: Architecture Style*
+
+Based on the architecture charetrisctis we prefer to use the microservices based style.
+
 ![Service Granularity](/Diagrams/service-granularity.png)
 *Figure: Service Granularity*
 
@@ -147,9 +152,6 @@ Microservices are not the only alternative to monolithic architectures. A real-w
 As a startup, Road Warrior prioritizes rapid time-to-market while seeking the benefits of modularity and scalability. Therefore, a '**mini-services**' architecture with a slightly lesser granularity than microservices is a suitable choice.
 
 By adopting a "mini-services" architecture, Road Warrior can strike a balance between rapid development and modularity. This approach allows for quicker iterations, parallel development efforts, and the ability to release new features to the market faster while maintaining a structured and maintainable codebase.
-
-![Architecture Style](/Diagrams/architecture-style.png)
-*Figure: Architecture Style*
 
 - Miniservices are similar to microservices but have a larger scope and relaxed architectural constraints. 
 - Like a microservice, a miniservice is a physically encapsulated, loosely coupled, independently deployable and scalable application component.
