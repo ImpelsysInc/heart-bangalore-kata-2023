@@ -182,10 +182,12 @@ This approach balances speed to market with modularity and maintainability.
 ### User experience (UX) design
  ![Dashboard](/Diagrams/ux-dashboard.png)  
  ![Reports](/Diagrams/ux-reports.png) 
+ #### More designs
 - [Add Trip](/Diagrams/ux-add-trip.png)
 - [Login](/Diagrams/ux-login.png)  
-- [Sign Up](/Diagrams/ux-sign-up.png) 
-- [Adobe xd walkthrough link](https://xd.adobe.com/view/2771a735-f300-447d-b192-2e5f9d16369f-7222/?fullscreen)
+- [Sign Up](/Diagrams/ux-sign-up.png)
+ #### Complete walkthrough
+- [Adobe-XD walkthrough](https://xd.adobe.com/view/2771a735-f300-447d-b192-2e5f9d16369f-7222/?fullscreen)
  
 ## Event Storming
 ![Identify Events](/Diagrams/event_storming_domain_identification_1.jpg)\
@@ -209,6 +211,7 @@ This approach balances speed to market with modularity and maintainability.
 ![Complete Overview](/Diagrams/c4-component-batch-processor.png)
 #### Batch Process sequence diagram
 ![Complete Overview](/Diagrams/batch-process-sequnce-diagram.png)
+
 ### Mobile App
 ![Complete Overview](/Diagrams/c4-component-mobile.png)
 ## Code
