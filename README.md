@@ -21,7 +21,7 @@
     - [Driving Characteristics](#driving-characteristics)
     - [Implicit Characteristics](#implicit-characteristics)
 - [Use Journey](#user-journey)
-    - [ux](#ux)
+    - [User experience (UX) design](#user-experience-(UX)-design)
 - [Event Storming](#event-storming)
 - [Context](#context)
     - [Complete Overview](#complete-overview)
@@ -184,12 +184,13 @@ This approach balances speed to market with modularity and maintainability.
 - **Parallel Development**: Development teams aligned with mini-services can work in parallel on different aspects of the system, allowing for faster development and quicker response to user needs.
 
 ## Use Journey  
-### User Exeperiance designs
-- [Login](/Diagrams/ux-login.png)  
-- [Sign Up](/Diagrams/ux-sign-up.png)
-- [Dashboard](/Diagrams/ux-dashboard.png)  
+### User experience (UX) design
+ ![Dashboard](/Diagrams/ux-dashboard.png)  
+ ![Reports](/Diagrams/ux-reports.png) 
 - [Add Trip](/Diagrams/ux-add-trip.png)
-- [Reports](/Diagrams/ux-reports.png)
+- [Login](/Diagrams/ux-login.png)  
+- [Sign Up](/Diagrams/ux-sign-up.png) 
+- [Adobe xd walkthrough link](https://xd.adobe.com/view/2771a735-f300-447d-b192-2e5f9d16369f-7222/?fullscreen)
  
 ### Event Storming
 
