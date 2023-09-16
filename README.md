@@ -214,6 +214,13 @@ This approach balances speed to market with modularity and maintainability.
 
 ### Mobile App
 ![Complete Overview](/Diagrams/c4-component-mobile.png)
+
+Single code base can used for building iOS and Android App.  
+UIs are broken down into small, reusable components, making it easier to manage complex user interfaces.  
+Use JSX, because it is easier to define component structures and improves code readability.  
+Use firebase for tracking Crashlytics and analytics.  
+Use Optimizely for A/B testing.
+
 ## Code
 ### Trip API
 ![Complete Overview](/Diagrams/c4-code-tripservice.png)
