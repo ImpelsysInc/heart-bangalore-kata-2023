@@ -253,8 +253,22 @@ Represent Amazon Simple Notification Service (SNS) and Simple Queue Service (SQS
 ## Cost Analysis
 ## Evaluation, Risks and Architecture Fitness  
 ## ADRs
-## References
 
+- [ADR-01:Programming language for service](/ADRs/ADR-01-programming-language-for-service.md)  
+- [ADR-02:Technology for web app](/ADRs/ADR-02-technology-for-web-app.md)
+- [ADR-03:Technology for mobile app](/ADRs/ADR-03-technology-for-mobile-app.md)  
+- [ADR-04:Framework selection for gateway](/ADRs/ADR-04-framework-selection-for-gateway.md)
+- [ADR-05:Database seclection for reporting](/ADRs/ADR-05-database-seclection-for-reporting.md)
+- [ADR-06:Cloud provider selection from application](/ADRs/ADR-06-cloud-provider-selection-from-application.md)
+- [ADR-07:Process engine selection for batch process](/ADRs/ADR-07-process-engine-selection-for-batch-process.md)  
+- [ADR-08:Transactional database selection for application](/ADRs/ADR-08-transactional-database-selection-for-application.md)
+- [ADR-09:Datastore selection for barch process](/ADRs/ADR-09-datastore-selection-for-barch-process.md)
+- [ADR-10:GDPR compliance](/ADRs/ADR-10-GDPR-compliance.md)
+
+## References
+- C4
+- Event storming
+- Kata Event
 
 
 
