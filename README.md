@@ -197,14 +197,12 @@ This approach balances speed to market with modularity and maintainability.
 - [Sign Up](/Diagrams/ux-sign-up.png) 
 - [Adobe xd walkthrough link](https://xd.adobe.com/view/2771a735-f300-447d-b192-2e5f9d16369f-7222/?fullscreen)
  
-### Event Storming
-
+## Event Storming
 ![Identify Events](/Diagrams/event_storming_domain_identification_1.jpg)\
 *Figure: Identify events*
 
 ![Group Events](/Diagrams/event_storming_domain_identification_2.jpg)\
 *Figure: Group events*
-
 
 ## Context
 ### Complete Overview
