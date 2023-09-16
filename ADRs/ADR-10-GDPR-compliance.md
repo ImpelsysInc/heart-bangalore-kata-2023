@@ -9,11 +9,11 @@ Proposed
 ## Context
 ### What does GDPR have to do with travel? 
 
-Any travel or transportation services provider collecting or processing data about an EU citizen is eligible for GDPR compliance. That includes TMCs, hotels, airlines, ground transportation, booking tools, the GDS, and even companies booking travel for their employees. GDPR also addresses the export of personal data outside EU and EEA areas for citizens within the EU and EEA. Travel organizations collecting data on EU subjects must adhere to GDPR, regardless of their geography or incorporation. 
+Any travel or transportation services provider collecting or processing data about an EU citizen is eligible for GDPR compliance. That includes Online Travel Agencies, hotels, airlines, ground transportation, booking tools, the Global Distribution System, and even companies booking travel for their employees. GDPR also addresses the export of personal data outside EU and EEA areas for citizens within the EU and EEA. Travel organizations collecting data on EU subjects must adhere to GDPR, regardless of their geography or incorporation. 
 
 ### What role does data play in the travel industry? 
 
-The travel industry uses data to give consumers a more personalized experience. Personal data transferred to **GDS** and **TMCs**, hotels, airlines, ground transportation, and online booking tools. When you book travel arrangements, all that data is recorded and kept to better improve your travel experience. 
+The travel industry uses data to give consumers a more personalized experience. Personal data transferred to **Global Distribution System** and **Online Travel Agencies**, hotels, airlines, ground transportation, and online booking tools. When you book travel arrangements, all that data is recorded and kept to better improve your travel experience. 
 
 ### What does GDPR have to do with org and traveler? 
 
@@ -24,6 +24,9 @@ Data controllers are required to gain complicit consent from data subjects and c
 Once a data subject has given a data controller consent to their data, they still retain the right to revoke consent at any time in the future. 
 
 As a data controller for your travelers’ data, it’s important to make sure that the information you provide is accurate—especially when it relates to travel. As airlines and airports start cracking down on accurate information and Real IDs in the next few years, it’s your job to be sure everything is correct on your company’s end. Especially as you add new travelers to your organization, it’s important to ensure that the information you add is correct, so they won’t encounter any security issues on the road. 
+
+### Decision
+As an international portal that may cater to EU customers, We take diligent measures to safeguard personally identifiable information (PII) data through fundamental security mechanisms, such as encrypting data both at rest and in transit, employing data pseudonymization techniques, and obtaining cookie consent. Additionally, we have established procedures for addressing data deletion requests, including the right to be forgotten.
 
 ## Consequences
 Moderate up-front cost, big potential savings down the road.
