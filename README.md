@@ -39,8 +39,6 @@ Hey!! we are Heart Bangalore team from Banglore,India presenting the soluton for
 - [Code](#code)
     - [Trip Service](#trip-api-service)
 - [Deployment](#deployment)
-- [Cost Analysis](#cost-analysis)
-- [Evaluation, Risks and Architecture Fitness](#evaluation-risks-and-architecture-fitness)  
 - [ADRs](#adrs)
 
 ## Introduction
@@ -287,8 +285,6 @@ API Gateway services that manage and secure your APIs.
 #### CloudWatch and Metrics 
 Include CloudWatch for monitoring and metrics collection. Show how it integrates with other services.  
 
-## Cost Analysis
-## Evaluation, Risks and Architecture Fitness  
 ## ADRs
 
 - [ADR-01:Programming language for service](/ADRs/ADR-01-programming-language-for-service.md)  
