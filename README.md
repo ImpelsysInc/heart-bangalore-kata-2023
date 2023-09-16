@@ -67,6 +67,12 @@ The Road Warrior wants to build the next generation online trip management Dashb
 **US-14:** Travel updates must be presented in the app within 5 minutes of generation by the source.\
 **US-15:** Response time from web (800ms) and mobile (First-contentful paint of under 1.4 sec)
 
+## Assumptions
+* Actual trip bookings are done externally, and the application is only a dashboard to aggregate trips.
+* Notifications are not part of the basic requirements.
+* Payment integration is not required because we are not directly managing bookings.
+* Revenue generation is not an initial requirement; the current requirement is to add customers to the system.
+
 ## Market Research
 
 ### Market Scope
