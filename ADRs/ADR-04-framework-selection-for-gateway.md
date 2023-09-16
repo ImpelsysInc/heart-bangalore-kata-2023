@@ -34,7 +34,3 @@ We will need to ensure the availability and scalability of the Krakend infrastru
 
 ## Decision Rationale
 Krakend was chosen because it aligns with our project requirements for efficiently managing microservices-based APIs. Its microservices integration, middleware support, and developer-friendly configuration make it a strong choice for our API gateway needs. While alternatives were considered, Krakend's feature set and community support make it a well-suited solution for our application. Also On the hardware side, KrakenD is very light and consumes very low resources. For instance, the consumption pattern of the baseline (we will see this definition below) is around 100-200MB of RAM and can work on production with 0.5 vCPU. This baseline can process thousands of requests per second.
-
-## References
-Krakend API Gateway
-Krakend GitHub Repository
