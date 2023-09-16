@@ -39,8 +39,6 @@ We may need to integrate React with other technologies and libraries as the proj
 
 ## Decision Rationale
 React.js was chosen because of its strong component-based architecture, performance optimizations through the Virtual DOM, and extensive ecosystem. It aligns with our goal of building a modern, efficient, and maintainable user interface for our application. While alternatives were considered, React's widespread adoption and support make it a strong choice for the long-term success of our project.
+We will use AWS Amplify to deploy and host our web application, which will be served through AWS CloudFront as the content delivery network.
 
-## References
-React Documentation  
-Redux Documentation
 
