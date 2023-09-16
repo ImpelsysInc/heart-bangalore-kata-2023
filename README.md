@@ -101,7 +101,7 @@ Online travel market growth rate is expected to grow at a CAGR of 10.3% over the
 2.	Trustworthy and secure website with seamless transaction options
 3.	Easy, faster, less cumbersome single vendor affiliate for multiple B2B and B2C connects. 
 4.	Capability to collect and store large amount of data and perform AI-ML analytics based on traveller buying patterns, different pricing strategies, new trends and opportunities. 
-5.	Capability to personalize the options by providing recommendations in the form of updates or commercial advertisements as rendered by the B2B segments
+5.	Capability to personalize the options by providing recommendations in the form of updates or advertisements as rendered by the B2B segments
 
 ### Other Considerations 
 **Personalized Recommendations:** AI can analyze user preferences, past travel history, and behavior to provide highly personalized travel recommendations. This includes suggesting destinations, hotels, activities, and even travel itineraries tailored to individual preferences.  
