@@ -15,7 +15,7 @@
 - [Requirements](#requirements)
     - [Business Requirments](#business-requirments)  
     - [Technical Requirements](#technical-requirements)
-    - [Market Research](#[market-research) 
+    - [Market Research](#market-research) 
 - [Architecture Characteristics](#architecture-characteristics) 
     - [Driving Characteristics](#driving-characteristics)
     - [Implicit Characteristics](#implicit-characteristics)
@@ -93,9 +93,7 @@ Online travel market growth rate is expected to grow at a CAGR of 10.3% over the
 5.	Capability to personalize the options by providing recommendations in the form of updates or commercial advertisements as rendered by the B2B segments
 
 ## System Architecture Characteristics
-
 To ensure a successful system implementation, it's vital to prioritize key architecture characteristics. These elements guarantee reliability, availability, and responsiveness, delivering a seamless user experience.
-
 
 ![Architecture Characteristics](/Diagrams/architecture-characteristic.png)
 *Figure: Architecture Characteristics*
@@ -168,14 +166,12 @@ This approach balances speed to market with modularity and maintainability.
 ### Scalability
 
 - **Granular Scaling**: Mini-services allow for granular scaling of specific parts of the application to meet varying workloads efficiently.
-
 - **Resource Efficiency**: Scalability ensures optimal resource usage, preventing over-provisioning and reducing operational costs.
-
 - **Seamless Growth**: The architecture facilitates the seamless growth of the system as user numbers and data volume increase over time.
+
 ### Availability
 
 - **Independent Deployment**: The architecture's emphasis on independent deployment contributes to high availability. If one mini-service experiences issues or requires maintenance, it does not necessarily impact the availability of other services.
-
 - **Robust Testing and CI/CD**: The inclusion of robust testing and CI/CD practices ensures that new updates can be quickly and reliably deployed, minimizing the likelihood of extended downtime.
 
 ### Responsiveness
@@ -184,23 +180,25 @@ This approach balances speed to market with modularity and maintainability.
 
 - **Parallel Development**: Development teams aligned with mini-services can work in parallel on different aspects of the system, allowing for faster development and quicker response to user needs.
  
-### Actors and Use Cases
 ### Event Storming
 ## Context
+### Complete Overview
+![Complete Overview](/Diagrams/c4-complete-overview.png)
+### Context Diagram
+![Complete Overview](/Diagrams/c4-system-context.png)
 ## Containers
-### Service Containers
-### API Layer
-### Coupling and Architecture Quanta
-**Static Coupling**
-**Dynamic Coupling**
+### Road Warrior System
+![Complete Overview](/Diagrams/c4-container-road-warrior-system.png)
 ## Components
-### Identity and Access Manager
-### Profile Manager
-### Connections Manager
-**Proximity Detection**  
-**Establishing Connection**  
-### Reporting and Analytics Manager
-### Social Media API Manager
+### API Application
+![Complete Overview](/Diagrams/c4-container-road-warrior-system.png)
+### Batch Process
+![Complete Overview](/Diagrams/c4-component-batch-processor.png)
+### Mobile App
+![Complete Overview](/Diagrams/c4-container-road-warrior-system.png)
+## Code
+### Trip API
+![Complete Overview](/Diagrams/c4-container-road-warrior-system.png)
 ## Deployment
 The next diagram models a sample deployment of The Road Warrior system on the AWS Platform. A brief overview of the involved AWS services follows.
 
