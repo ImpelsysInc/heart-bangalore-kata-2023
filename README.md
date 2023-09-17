@@ -206,7 +206,8 @@ This approach balances speed to market with modularity and maintainability.
 
 ### Performance
 - **Data access Performance**: The architecture places a significant emphasis on selecting the appropriate database system to ensure optimized access and horizontal scalability, thereby meeting stringent response time requirements. One approach involves caching database data in an in-memory store to expedite access, while another option entails leveraging NoSQL databases for enhanced and optimized data retrieval.
-
+- **Application performancee**: The strategy involves the selection of an optimized programming language and the horizontal scaling of application nodes to effectively address the demands of scale and performance. Web applications are serving content from a Content Delivery Network (CDN) for performance and utilizing an optimized native mobile application for mobile devices.
+  
 ## Use Journey 
  ![User Journey Diagram](/Diagrams/road-warriors-workflow.png)
 ### User experience (UX) design
