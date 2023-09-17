@@ -205,8 +205,7 @@ This approach balances speed to market with modularity and maintainability.
 - **Robust Testing and CI/CD**: The inclusion of robust testing and CI/CD practices ensures that new updates can be quickly and reliably deployed, minimizing the likelihood of extended downtime.
 
 ### Performance
-- **Data access Performance**: Achitecture emphasis on choosing the right database and optimize the access and horizondtable scalability to meet the response time.
-- **Application performance**: Optmized programing language and horizondal scaling of application nodes to meet the scale and performance. Serve the contents from CDN and otpimized mobile application code.
+- **Data access Performance**: The architecture places a significant emphasis on selecting the appropriate database system to ensure optimized access and horizontal scalability, thereby meeting stringent response time requirements. One approach involves caching database data in an in-memory store to expedite access, while another option entails leveraging NoSQL databases for enhanced and optimized data retrieval.
 
 ## Use Journey 
  ![User Journey Diagram](/Diagrams/road-warriors-workflow.png)
