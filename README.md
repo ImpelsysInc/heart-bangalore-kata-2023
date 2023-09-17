@@ -2,7 +2,7 @@
 
 ![Team Heart Bangalore](/Diagrams/team-heart-bangalore.png)
 
-Hey!! we are Heart Bangalore team from Banglore,India presenting the soluton for O'Reilly Architecture Katas Sept 2023
+Hello! We are the Heart Bangalore team hailing from Bangalore, India, and we are here to present our solution for the O'Reilly Architecture Katas in September 2023.
 
 ## Team Members 
  [Krishnaraj Ramakrishna](https://www.linkedin.com/in/krishnaraj-vr-8869b45/)  
@@ -22,7 +22,7 @@ Hey!! we are Heart Bangalore team from Banglore,India presenting the soluton for
 - [Architecture Characteristics](#architecture-characteristics) 
     - [Top 3 Characteristics](#top-3-characteristics)
     - [Implicit Characteristics](#implicit-characteristics)
-    - [Implicit Characteristics](#other-characteristics)
+    - [Other Characteristics](#other-characteristics)
 - [Architecture Approach](#architecture-approach)
 - [Use Journey](#use-journey)
     - [User experience (UX) design](#user-experience-ux-design)
@@ -35,12 +35,9 @@ Hey!! we are Heart Bangalore team from Banglore,India presenting the soluton for
 - [Components](#components)
     - [API Application](#api-application)
     - [Batch Process](#batch-process)
-    - [Mobile App](#mobile-app)
 - [Code](#code)
     - [Trip Service](#trip-api-service)
 - [Deployment](#deployment)
-- [Cost Analysis](#cost-analysis)
-- [Evaluation, Risks and Architecture Fitness](#evaluation-risks-and-architecture-fitness)  
 - [ADRs](#adrs)
 
 ## Introduction
@@ -58,14 +55,25 @@ The Road Warrior wants to build the next generation online trip management Dashb
 **US-07:** Provide end-of-year summary reports for users with a wide range of metrics about their travel usage.\
 **US-08:** Road Warrior gathers analytical data from users trips for various purposes - travel trends, locations, airline and hotel vendor preferences, cancellation and update frequency, and so on.\
 **US-09:** Must integrate seamlessly with existing travel systems (i.e, SABRE, APOLLO).\
-**US-10:** Must integrate with preferred travel agency for quick problem resolution (help me!).
+**US-10:** Must integrate with preferred travel agency for quick problem resolution (help me!).\
+**US-11:** Must work internationally.
 
 ### Technical Requirements
-**US-11:** Richest user interface possible across all deployment platforms.\
-**US-12:** Must work internationally.\
+**US-12:** Richest user interface possible across all deployment platforms.\
 **US-13:** Users must be able to access the system at all times (max 5 minutes per month of unplanned downtime).\
 **US-14:** Travel updates must be presented in the app within 5 minutes of generation by the source.\
-**US-15:** Response time from web (800ms) and mobile (First-contentful paint of under 1.4 sec)
+**US-15:** Response time from web (800ms) and mobile (First-contentful paint of under 1.4 sec)\
+**US-16:** Supports minimum 2 million active users/week\
+**US-17:** Supports total users: 15 million (user accounts)
+
+## Assumptions
+* Actual trip bookings are done externally, and the application is only a dashboard to aggregate trips.
+* Notifications are not part of the basic requirements.
+* Payment integration is not required because we are not directly managing bookings.
+* Revenue generation is not an initial requirement; the current requirement is to add customers to the system.
+* Travel agencies and SABRE, APOLLO are pre configured in the system
+* Help me !! link only redirect to the respecitve agency site if agency information is available in the trip
+* User will provide his hometown location while registering for localization
 
 ## Market Research
 
@@ -97,12 +105,27 @@ Online travel market growth rate is expected to grow at a CAGR of 10.3% over the
 2.	Trustworthy and secure website with seamless transaction options
 3.	Easy, faster, less cumbersome single vendor affiliate for multiple B2B and B2C connects. 
 4.	Capability to collect and store large amount of data and perform AI-ML analytics based on traveller buying patterns, different pricing strategies, new trends and opportunities. 
-5.	Capability to personalize the options by providing recommendations in the form of updates or commercial advertisements as rendered by the B2B segments
+5.	Capability to personalize the options by providing recommendations in the form of updates or advertisements as rendered by the B2B segments
 
 ### Other Considerations 
-**Personalized Recommendations:** AI can analyze user preferences, past travel history, and behavior to provide highly personalized travel recommendations. This includes suggesting destinations, hotels, activities, and even travel itineraries tailored to individual preferences.  
-**Augmented Reality (AR):** AR apps can provide travelers with immersive experiences, such as virtual tours of destinations or navigation assistance in unfamiliar locations.  
-**AI Chatbots:** AI chatbots can handle customer inquiries, provide real-time support, and assist with last-minute changes to travel plans.
+- **Personalized Recommendations:** AI can analyze user preferences, past travel history, and behavior to provide highly personalized travel recommendations. This includes suggesting destinations, hotels, activities, and even travel itineraries tailored to individual preferences.  
+- **Augmented Reality (AR):** AR apps can provide travelers with immersive experiences, such as virtual tours of destinations or navigation assistance in unfamiliar locations.  
+- **AI Chatbots:** AI chatbots can handle customer inquiries, provide real-time support, and assist with last-minute changes to travel plans.
+
+## Quality Attribute Requirements
+This section outlines the Quality Attribute Requirements that exert a critical influence on the overarching architecture of the software solution.
+| Id | Quality Attribute | Description |
+| --------- | --------- | --------- |
+| QA1 | Scalability | US-16: Supports 2 million active users/week |
+| QA2 | Scalability | US-17: Supports total users: 15 million (user accounts) |
+| QA3 | Performance | US-03: Updates must be in the app within 5 minutes of an update (better than the competition) |
+| QA4 | Performance | US-14: Travel updates must be presented in the app within 5 minutes of generation by the source.|
+| QA5 | Availability | US-13: Users must be able to access the system at all times (max 5 minutes per month of unplanned downtime). |
+| QA6 | Responsiveness | US-15: Response time from web (800ms) and mobile (First-contentful paint of under 1.4 sec) |
+| QA7 | Integrability | US-03: The system must interface with the agency’s existing airline, hotel, and car rental interface system |
+| QA8 | Usability | US-12: Richest user interface possible across all deployment platforms. |
+| QA9 | Usability | US-11: Must work internationally. |
+| QA10 | Security | US-01: Poll E-Mail looking for travel-related E-Mail.  |
 
 ## Architecture Characteristics
 To ensure a successful system implementation, it's vital to prioritize key architecture characteristics. These elements guarantee reliability, availability, and responsiveness, delivering a seamless user experience.
@@ -113,10 +136,10 @@ To ensure a successful system implementation, it's vital to prioritize key archi
 ## Top 3 Characteristics
 ### Scalability
  Scalability allows the system to accommodate a growing user base and increased data volume, ensuring that Road Warrior can scale its services as it gains more users.
-### Availability
-"99.99% uptime" is a High availability, with a maximum of 5 minutes per month of unplanned downtime, is essential to ensure travelers can access their reservations and updates reliably.
 ### Performance
  Performance optimization is critical to meet the specified response times and deliver real-time travel updates quickly and efficiently.
+### Availability
+"99.99% uptime" is a High availability, with a maximum of 5 minutes per month of unplanned downtime, is essential to ensure travelers can access their reservations and updates reliably.
 
 ## Implicit Characteristics
 ### Feasibility (Cost/Time)
@@ -196,11 +219,25 @@ This approach balances speed to market with modularity and maintainability.
 - [Adobe-XD walkthrough](https://xd.adobe.com/view/2771a735-f300-447d-b192-2e5f9d16369f-7222/?fullscreen)
  
 ## Event Storming
-![Identify Events](/Diagrams/event_storming_domain_identification_1.jpg)\
+
+Event storming drives greater understanding and productivity by simplifying the approach and including multiple levels of stakeholders in the business. With the help of sticky notes and a willing group, you can reveal your business processes more efficiently and enjoyably.
+
+### Identify domain events
+The first step is to begin identifying events. Events are “things that happen” in a process or system. Important events trigger reactions, so understanding the causal event can help you understand how the system operates and why. Keep in mind that events are always noted in the past tense.
+![Identify domain events](/Diagrams/event-storming-events.jpg)\
 *Figure: Identify events*
 
-![Group Events](/Diagrams/event_storming_domain_identification_2.jpg)\
-*Figure: Group events*
+### Connect domain events to commands
+With your events outlined, you can begin to evaluate each event for its causes and consequences. In other words, ask yourself what triggered this event (e.g., users, other events, or external systems).
+
+![Identify bounded context and aggregates](/Diagrams/event-storming-command.jpg)\
+*Figure: connect domain events to commands*
+
+### Identify bounded context and aggregates
+For high-level event storming, the process can end once your team has added domain events, commands, and reactions. However, event storming can be combined with the technique of domain-driven design to define the structure of your system and send your team on the way to implementation.
+
+![Identify bounded context and aggregates](/Diagrams/event-storming-context.jpeg)\
+*Figure: bounded context and aggregates*
 
 ## Context
 ### Complete Overview
@@ -227,17 +264,6 @@ Refer ADR-07 and ADR-09 for process engine and job datastore selection
 2. The Job Scheduler retrieves the most recent user data based on the previously stored synchronization time in the database, taking into account user creation and modification timestamps. It updates the latest user data in the batch database on a per-user basis. Additionally, it initiates the Elastic MapReduce (EMR) cluster featuring Flink.
 3. Once the EMR cluster with Flink is up and running, it retrieves jobs from the Jobs Database and commences the aggregation of trip data based on reservations for individual users. This process also involves the generation of necessary reporting facts and dimensions. Upon job completion, the trip data and reporting summary are stored in CSV format within an S3 bucket. Following this, the same dataset is loaded into both the transactional and reporting databases using the "loadfile" command, ensuring efficient data ingestion into the database systems
 
-
-### Mobile App
-![Complete Overview](/Diagrams/c4-component-mobile.png)
-
-* Single code base can used for building iOS and Android App.  
-* UIs are broken down into small, reusable components, making it easier to manage complex user interfaces.  
-* Use JSX, because it is easier to define component structures and improves code readability.  
-* Use firebase for tracking Crashlytics and Analytics.  
-* Use Optimizely for A/B testing.
-
-React Native and React.js share a similar programming model and the concept of reusable components, they are tailored for different environments. React.js is intended for web applications, while React Native is used for developing native mobile applications. While there is some code reuse potential between React Native and React.js, significant adaptation and platform-specific development are often necessary due to the different nature of web and mobile development.
 
 ## Code
 ### Trip API Service
@@ -281,14 +307,11 @@ Indicate if they are used for static assets, backups, or other purposes.
  It can also function as a data lake, housing report data and trip data for future analytical purposes.
 #### Application Load Balancers  
 Application Load Balancers for distributing incoming traffic across multiple instances or containers. 
-Our API Gatway uses ALB for providing public access  
-#### API Gateway 
-API Gateway services that manage and secure your APIs.  
+Our Krakend API Gatway uses ALB for providing public access  
+ 
 #### CloudWatch and Metrics 
 Include CloudWatch for monitoring and metrics collection. Show how it integrates with other services.  
 
-## Cost Analysis
-## Evaluation, Risks and Architecture Fitness  
 ## ADRs
 
 - [ADR-01:Programming language for service](/ADRs/ADR-01-programming-language-for-service.md)  
