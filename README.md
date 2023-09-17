@@ -112,6 +112,21 @@ Online travel market growth rate is expected to grow at a CAGR of 10.3% over the
 - **Augmented Reality (AR):** AR apps can provide travelers with immersive experiences, such as virtual tours of destinations or navigation assistance in unfamiliar locations.  
 - **AI Chatbots:** AI chatbots can handle customer inquiries, provide real-time support, and assist with last-minute changes to travel plans.
 
+## Quality Attribute Requirements
+This section outlines the Quality Attribute Requirements that exert a critical influence on the overarching architecture of the software solution.
+| Id | Quality Attribute | Description |
+| --------- | --------- | --------- |
+| QA1 | Scalability | US-16: Supports 2 million active users/week |
+| QA2 | Scalability | US-17: Supports total users: 15 million (user accounts) |
+| QA3 | Performance | US-03: Updates must be in the app within 5 minutes of an update (better than the competition) |
+| QA4 | Performance | US-14: Travel updates must be presented in the app within 5 minutes of generation by the source.|
+| QA5 | Availability | US-13: Users must be able to access the system at all times (max 5 minutes per month of unplanned downtime). |
+| QA6 | Responsiveness | US-15: Response time from web (800ms) and mobile (First-contentful paint of under 1.4 sec) |
+| QA7 | Integrability | US-03: The system must interface with the agency’s existing airline, hotel, and car rental interface system |
+| QA8 | Usability | US-12: Richest user interface possible across all deployment platforms. |
+| QA9 | Interoperablity | US-11: Must work internationally. |
+| QA10 | Security | US-01: Poll E-Mail looking for travel-related E-Mail.  |
+
 ## Architecture Characteristics
 To ensure a successful system implementation, it's vital to prioritize key architecture characteristics. These elements guarantee reliability, availability, and responsiveness, delivering a seamless user experience.
 
@@ -121,10 +136,10 @@ To ensure a successful system implementation, it's vital to prioritize key archi
 ## Top 3 Characteristics
 ### Scalability
  Scalability allows the system to accommodate a growing user base and increased data volume, ensuring that Road Warrior can scale its services as it gains more users.
-### Availability
-"99.99% uptime" is a High availability, with a maximum of 5 minutes per month of unplanned downtime, is essential to ensure travelers can access their reservations and updates reliably.
 ### Performance
  Performance optimization is critical to meet the specified response times and deliver real-time travel updates quickly and efficiently.
+### Availability
+"99.99% uptime" is a High availability, with a maximum of 5 minutes per month of unplanned downtime, is essential to ensure travelers can access their reservations and updates reliably.
 
 ## Implicit Characteristics
 ### Feasibility (Cost/Time)
