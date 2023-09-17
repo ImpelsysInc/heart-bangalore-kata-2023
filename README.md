@@ -71,9 +71,10 @@ The Road Warrior wants to build the next generation online trip management Dashb
 * Notifications are not part of the basic requirements.
 * Payment integration is not required because we are not directly managing bookings.
 * Revenue generation is not an initial requirement; the current requirement is to add customers to the system.
-* Travel agencies and SABRE, APOLLO are pre configured in the system
+* Popular travel agencies and other system like SABRE, APOLLO are pre configured in the system
 * Help me !! link only redirect to the respecitve agency site if agency information is available in the trip
 * User will provide his hometown location while registering for localization
+* The system is already integrated with well-known email providers such as Gmail, MSN, iCloud, and others.
 
 ## Market Research
 
