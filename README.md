@@ -340,6 +340,7 @@ Include CloudWatch for monitoring and metrics collection. Show how it integrates
 - [C4 Diagrams](https://c4model.com/)
 - [Event storming](https://en.wikipedia.org/wiki/Event_storming)
 - [Architecture Kata Event](https://learning.oreilly.com/featured/architectural-katas/)
+- [Understanding Travel APIs](https://www.altexsoft.com/blog/engineering/travel-and-booking-apis-for-online-travel-and-tourism-service-providers/)
 
 
 
