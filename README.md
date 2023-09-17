@@ -145,7 +145,8 @@ To ensure a successful system implementation, it's vital to prioritize key archi
 ### Feasibility (Cost/Time)
 Achieving rapid time-to-market while managing development costs is a feasible goal with the selected "mini-services" architecture.
 ### Security
-Implementing strong authentication and authorization mechanisms is vital to safeguard traveler information and data integrity. Also storing the PII data like trip information needs to be protected and handle properly due to compliance like GDPR
+Implementing strong authentication and authorization mechanisms is vital to safeguard traveler information and data integrity. Also storing the PII data like trip information needs to be protected and handle properly due to compliance like GDPR. 
+Token-based authentication (JWT) and role-based access control (RBAC) must safeguard all API access. Additional considerations encompass encrypting data at rest and during transmission, ensuring secure credential management, effectively managing sessions, implementing refresh tokens for applications, and integrating IAM for enhanced security.
 ### Maintainability
 Ensuring clean code, documentation, and knowledge sharing within the development team are essential for long-term system maintainability.
 ### Observability
