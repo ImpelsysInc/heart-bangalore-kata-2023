@@ -124,7 +124,7 @@ This section outlines the Quality Attribute Requirements that exert a critical i
 | QA6 | Responsiveness | US-15: Response time from web (800ms) and mobile (First-contentful paint of under 1.4 sec) |
 | QA7 | Integrability | US-03: The system must interface with the agency’s existing airline, hotel, and car rental interface system |
 | QA8 | Usability | US-12: Richest user interface possible across all deployment platforms. |
-| QA9 | Interoperablity | US-11: Must work internationally. |
+| QA9 | Usability | US-11: Must work internationally. |
 | QA10 | Security | US-01: Poll E-Mail looking for travel-related E-Mail.  |
 
 ## Architecture Characteristics
