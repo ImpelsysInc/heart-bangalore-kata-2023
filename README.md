@@ -123,7 +123,7 @@ This section outlines the Quality Attribute Requirements that exert a critical i
 | QA4 | Performance | US-14: Travel updates must be presented in the app within 5 minutes of generation by the source.|
 | QA5 | Availability | US-13: Users must be able to access the system at all times (max 5 minutes per month of unplanned downtime). |
 | QA6 | Responsiveness | US-15: Response time from web (800ms) and mobile (First-contentful paint of under 1.4 sec) |
-| QA7 | Integrability | US-03: The system must interface with the agency’s existing airline, hotel, and car rental interface system |
+| QA7 | Interoperability | US-03: The system must interface with the agency’s existing airline, hotel, and car rental interface system |
 | QA8 | Usability | US-12: Richest user interface possible across all deployment platforms. |
 | QA9 | Usability | US-11: Must work internationally. |
 | QA10 | Security | US-01: Poll E-Mail looking for travel-related E-Mail.  |
